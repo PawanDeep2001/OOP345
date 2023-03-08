@@ -1,0 +1,14 @@
+In line number 29 of your output:
+The output should be:
+----------------------
+^
+But your output is: 
+Item [0]: 16
+^
+
+Unmatched character details:
+The character in column 1 is supposed to be:
+  [-] ASCII code(45)
+but you printed
+  [I] ASCII code(73)
+

@@ -1,0 +1,34 @@
+/*
+    I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+    Name   :Pawan Deep
+    ID     :111144218
+    Email  :pdeep1@myseneca.ca
+    Date   :06/05/2022
+*/
+Workshop 3 was kind of challenging, it required quite a good knowledge of templates, the notes 
+were quite useful in this workshop. The functions I added in the Pair module are, the default 
+constructor, because the arrays of the collection module don't have a default constructor.
+The overload of the operator << is needed to call the display function and the display 
+function to print all the m_key's and the m_value's in a certain format. The operator == 
+overload is needed to check in the if clause of the Set module to check if the 2 objects are
+the same.
+I specialized in the add function to check if 2 numbers were the same, and check if their difference
+is smaller than 0.01, if we don't specialize in the add function the output for the double numbers
+was incorrect.
+I was actually thinking about defining the dummy outside the class but then I figured it 
+out how to define the dummy object inside the class and then initialize it outside the class
+in the specialization of the dummy object, otherwise, I had to define it as static and then 
+initialize it outside the class.
+template <>
+Pair Collection<Pair, 100>::operator[](size_t index) {
+   if ( index >= 0 && index < counter) {
+       return array[index];
+   }
+   else {
+       dummy = Pair("No Key", "No Value");
+       return dummy;
+   }
+}
+We are not splitting the modules into the header and .cpp files because templates are instantiated 
+at the compile-time, because they are included with #include .h in the main file
+on the other side, the .cpp files are executed later.

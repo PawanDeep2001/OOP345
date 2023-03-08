@@ -1,0 +1,34 @@
+/*
+	I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+	Name   :Pawan Deep
+	ID     :111144218
+	Email  :pdeep1@myseneca.ca
+	Date   :06/26/2022
+*/
+The 5th workshop was challenging, it was a good revision of the topics we discussed in the 
+previous weeks. 
+A functor is essentially a function object, in our workshop, the functor was the SpellChecker
+module, we defined it as a class in the SpellChecker module and then we used it as a templated
+function in Movie.h and Book.h for example:
+void fixSpelling(T& spellChecker) {
+	spellChecker(description);
+	spellChecker(Title);
+}
+The lambda expression is a technique to pass variables of another module into the current module's
+body, in order to access those variables we make a closure, that has access to those variables
+that aren't local.
+So, Lambda expressions and Functors are pretty similar, they both create function objects, 
+but Lambda expressions are easier to work with and they are used in a particular function. Both are used to 
+capture some data that is non-local. if we need something without any name, and we don't reuse
+it then we should use a Lambda expression on the other side if we want something concrete
+and reuse it, it's better to use a functor.
+The spellchecker constructor throws an exception if the name of the file doesn't exist, or it is
+empty, in order to make it work without exception, we need to display the names of the files
+that contain some data and then the user chooses the file accordingly.
+The Movie and Book module contain almost the same logic, we can create a base virtual class
+for those 2 modules with all the functions that have the same prototype, for example:
+const std::string& title() const;
+I can't remove the default constructor in the Movie and Book module because it is used in the
+Collection module whenever we want to resize the array or make the local temporary array, 
+otherwise, if we remove the constructor we will have an error because those 2 modules do not have
+a default constructor.

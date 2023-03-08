@@ -1,0 +1,26 @@
+/*
+	I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+	Name   :Pawan Deep
+	ID     :111144218
+	Email  :pdeep1@myseneca.ca
+	Date   :06/12/2022
+*/
+this workshop was quite challenging, we had to use classes that were in composition and 
+aggregation relation, and on the other side, we had to read the input from the file with 
+the string library. The most challenging part for me was understanding how to delete in order
+not to have any memory leak, I was initially deleting all the members with a for loop
+but I wasn't deleting the array itself, that caused almost 7-8 hours of work. 
+So for the toy module, I chose order_id to be int because it was a positive number, then 
+name as string, because it was easier to work with 2 strings instead of a char array or pointer
+and a string, the number of items I made it int because again it was a positive number, the price
+could have decimal numbers so I decided to make it double, and tax that is 0.13 double again.
+The relationship between Child and Toy class is composition, between an array of pointers and Child is a composition
+and between Toy and ConfirmOrder is aggregation, between the array of pointers and ConfirmOrder is an aggregation.
+In both aggregation and composition, we have an object of the class that has an object of an 
+other class, the difference is mainly in the syntax and in that in aggregation the object 
+is automatically destroyed when the object that it was dependent on gets deleted, in composition 
+no. Another characteristic of aggregation is that it has no meaningful value without the parent
+class, on the other side in composition it has still meaning.
+In the aggregation and composition relationship, we need to change a few things in our move 
+operator, because after copying we need to set the argument object to the default values, so
+to 0 or nullptr or "" according to the data type.

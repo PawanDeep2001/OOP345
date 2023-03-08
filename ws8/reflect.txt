@@ -1,0 +1,27 @@
+/*
+	I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+	Name   :Pawan Deep
+	ID     :111144218
+	Email  :pdeep1@myseneca.ca
+	Date   :07/24/2022
+*/
+In workshop 8 we used raw and smart pointers, the advantage of using smart pointers is that 
+we don't need to declare a new pointer and then add it to the collection activeEmp but we can
+directly add the smart pointer in the collection activeEmp.
+this is what we have done in a raw pointer:
+EmployeeWage employee(emp[i].name, sal[j].salary);
+and then to add it to the collection:
+EmployeeWage* add = &employee;
+activeEmp += add;
+On the other hand in a smart pointer:
+unique_ptr<EmployeeWage> employee(new EmployeeWage(emp[i].name, sal[j].salary));
+and then to add it to the collection:
+activeEmp += *employee;
+Definitely, with the smart pointer, it is easier to add it to the collection, the differences
+between smart and raw pointers are:
+Smart pointers have their own memory, so they own the memory where they are allocated, with the
+unique_ptr template, the smart pointer has his own memory, so it gets deleted automatically when
+the destructor is called, it can't be copied, but we can transfer ownership with the move 
+operator, on the other side shared_ptr is a smart pointer that shares its memory with other
+smart pointers could be copied, and it gets deleted automatically if there are no other smart
+pointers in the same memory.

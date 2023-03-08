@@ -1,0 +1,24 @@
+/*
+	I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+	Name   :Pawan Deep
+	ID     :111144218
+	Email  :pdeep1@myseneca.ca
+	Date   :05/29/2022
+*/
+The second workshop was mainly about the move operator and the time that takes to do run all
+the functions, as we can see the move constructor and the move assignment operators were
+much faster than the copy constructor and the copy assignment operator.
+This workshop wasn't too difficult, I got few difficulties regarding the 1 argument constructor,
+that I wasn't getting the correct output, then I found out that I wasn't rewinding the file
+in the correct way, so I just closed the file and reopened it in order not to have any issues, 
+I would say it worked brilliantly for me. Then another difficulty I encountered in the starting
+was where to place the structure, before I was placing it outside the class, then I found out
+that was much easier to place inside the class.
+Another warning that was displayed was to add the noexcept keyword at the end of the move 
+assignment operator and the move constructor, after adding it into the header file and the
+cpp file it was automatically fixed.
+Overall the library chrono wasn't difficult to use because of the type of the variables was given
+in the workshop instructions we just needed to implement them and use those in the correct 
+position for example the chrono::steady_clock::now(); takes the current time and then 
+we take the time at the end of the execution of the function and with the difference of the
+end time and the starting time we found the time taken to execute that function.

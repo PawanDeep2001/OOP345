@@ -1,0 +1,14 @@
+In line number 25 of your output:
+The output should be:
+ Variance:   5515121.375856
+             ^
+But your output is: 
+ Variance:      4915.392782
+             ^
+
+Unmatched character details:
+The character in column 14 is supposed to be:
+  [5] ASCII code(53)
+but you printed
+  [Space] ASCII code(32)
+

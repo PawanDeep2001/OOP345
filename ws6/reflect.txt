@@ -1,0 +1,36 @@
+/*
+	I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+	Name   :Pawan Deep
+	ID     :111144218
+	Email  :pdeep1@myseneca.ca
+	Date   :07/10/2022
+*/
+Workshop 6 was an excellent workshop, with a few things that caused a few issues, but all of
+those were not too difficult to overcome, then in the previous workshops we worked already
+on reading strings and removing spaces, so that became pretty easy to handle, then the new 
+addition, the vectors were easy to manage, I would say easier than the normal array, that has
+more complications to resize it. In the car module, I made the maker and condition 
+as a string because we needed a type of variable that stores characters, so because in the 
+function prototypes it was given for example std::string condition() const I choose to make
+those variables string. On the other side, TopSpeed is double because the numbers in the 
+files are not integer numbers. In the Autoshop module, I got a few difficulties in understanding
+how to iterate, because in the first moment I didn't exactly know how stl iterators work, 
+but they work pretty much in the same way as I would do in a normal loop but instead of using
+a length of the string we just set the pointer to the vector first element and then every time
+we increase the pointer till reaching the last pointer with:
+for (auto p = m_vehicles.begin(); p < m_vehicles.end(); ptr++)
+this made everything much easier than I was initially thinking.
+I needed to deallocate the memory in the vector because otherwise, it would create memory leaks
+To detect what actually went wrong when reading a file we might have to use try and catch in every
+record in order to try that code and if we have any error it will catch the error and then 
+we need to display where actually we had that error and the reason for that error in a message.
+We could have used std::list<sdds::Vehicle> and std::vector<sdds::Vehicle>  instead of 
+std::list<sdds::Vehicle*> and std::vector<sdds::Vehicle*> but that would have caused some 
+issues regarding the storage and the processing time would be a bit slower especially if the 
+data that we need to store is very long, on the other side in case the data is pretty limited we can
+use directly std::list<sdds::Vehicle> and std::vector<sdds::Vehicle> that in a certain way 
+works faster because it doesn't have to allocate memory and delete it every time.
+So when we have lots of data it's better to use the std::list<sdds::Vehicle*> and std::vector<sdds::Vehicle*>
+and if we have limited data it's better using std::list<sdds::Vehicle> and std::vector<sdds::Vehicle>.
+These 2 if used correctly will reduce the memory utilized and the time which will take to execute, 
+in a certain way, this affects mainly the CPU and the storage.
