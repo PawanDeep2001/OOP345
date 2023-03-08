@@ -1,0 +1,16 @@
+// Name: Pawan Deep
+// Seneca Student ID: 111144218
+// Seneca email: pdeep1@myseneca.ca
+// Date of completion: 08/07/2022
+//
+// I confirm that I am the only author of this file
+//   and the content was created entirely by me.
+Milestones 1 and 2 were pretty quick, but I encountered some difficulties in getting the correct output, especially when I had to
+iterate all the workstations, the run function initially gave multiple issues, first of all, I wasn't getting the first iteration
+empty, but that was easily sorted. The main issue was then getting all the workstations that were not possible to fill, my code 
+initially was made for all the stations that were getting filled, but not those who weren't I had to change the logic in a few functions
+even a little bit of login in the workstation.cpp in order to get the output correct. So the coding itself wasn't difficult in this
+milestone 3 either, but getting the correct output was the tricky part. The instructions for the run function of the LineManager 
+module were not detailed, so it took a while to understand.
+Overall it was interesting and gave us a different perspective, then what workshops give us. The modules were interconnected and 
+sometimes it took time to understand where to find the error.

@@ -1,0 +1,14 @@
+In line number 98 of your output:
+The output should be:
+Bookcase --> End of Line
+             ^
+But your output is: 
+Bookcase --> Bookcase
+             ^
+
+Unmatched character details:
+The character in column 14 is supposed to be:
+  [E] ASCII code(69)
+but you printed
+  [B] ASCII code(66)
+
